@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projets de Mesmin ALAHO - Développeur Web" />
+  <title>Projets - Mesmin ALAHO</title>
+  
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+<body>
+  <div id="sectionBall" class="section-ball">
+    <svg class="basketball" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="11" class="basketball-circle" stroke-width="1.5"/>
+      <path d="M1 12h22" class="basketball-lines"/>
+      <path d="M7 5Q12 8, 17 5" class="basketball-lines"/>
+      <path d="M7 19Q12 16, 17 19" class="basketball-lines"/>
+    </svg>
+  </div>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <div class="logo-mark small">MA</div>
+        <div class="brand-text">Mesmin ALAHO</div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="projects.html" class="nav-link active">Projets</a>
+        <a href="skills.html" class="nav-link">Compétences</a>
+        <a href="about.html" class="nav-link">À propos</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="menu-actions">
+        <div class="ball-in-menu bounce">
+          <svg class="basketball" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="11" class="basketball-circle" stroke-width="1.5"/>
+            <path d="M1 12h22" class="basketball-lines"/>
+            <path d="M7 5Q12 8, 17 5" class="basketball-lines"/>
+            <path d="M7 19Q12 16, 17 19" class="basketball-lines"/>
+          </svg>
+        </div>
+        <button id="burger" class="burger" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="projects.html" class="nav-link">Projets</a>
+      <a href="skills.html" class="nav-link">Compétences</a>
+      <a href="about.html" class="nav-link">À propos</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="projects-section">
+      <div class="container">
+        <h1>Projets</h1>
+        <div class="projects-container">
+          <article class="project-card spotlight-target" onmousemove="this.style.setProperty('--x', (event.clientX - this.getBoundingClientRect().left)/this.offsetWidth*100 + '%'); this.style.setProperty('--y', (event.clientY - this.getBoundingClientRect().top)/this.offsetHeight*100 + '%')">
+            <h3>BugTracker</h3>
+            <p class="muted">Système de gestion de tickets et suivi de bugs avec dashboard admin. Créer, assigner, et tracker l'état des tickets en temps réel.</p>
+            <div class="tech-stack">PHP • MySQL • Figma</div>
+            <a class="cta" href="https://github.com/mesminalaho23/bugtracker_full" target="_blank">Voir le code</a>
+          </article>
+
+          <article class="project-card spotlight-target" onmousemove="this.style.setProperty('--x', (event.clientX - this.getBoundingClientRect().left)/this.offsetWidth*100 + '%'); this.style.setProperty('--y', (event.clientY - this.getBoundingClientRect().top)/this.offsetHeight*100 + '%')">
+            <h3>Checklist</h3>
+            <p class="muted">Application moderne de gestion de tâches avec interface réactive. Créer, organiser et suivre ses listes en temps réel.</p>
+            <div class="tech-stack">React • Vite • Figma</div>
+            <a class="cta" href="https://github.com/mesminalaho23/Checklist" target="_blank">Voir le code</a>
+          </article>
+
+          <article class="project-card spotlight-target" onmousemove="this.style.setProperty('--x', (event.clientX - this.getBoundingClientRect().left)/this.offsetWidth*100 + '%'); this.style.setProperty('--y', (event.clientY - this.getBoundingClientRect().top)/this.offsetHeight*100 + '%')">
+            <h3>Prompt Wallet</h3>
+            <p class="muted">Application desktop pour sauvegarder et gérer une bibliothèque de prompts IA. Synthèse locale des données utilisateur.</p>
+            <div class="tech-stack">Electron-Vite • React • Figma</div>
+            <a class="cta" href="https://github.com/mesminalaho23/promptwallet" target="_blank">Voir le code</a>
+          </article>
+        </div>
+
+        <h2 style="margin-top: 48px; margin-bottom: 24px;">Projets Personnels</h2>
+        <div class="projects-container">
+          <article class="project-card spotlight-target personal" onmousemove="this.style.setProperty('--x', (event.clientX - this.getBoundingClientRect().left)/this.offsetWidth*100 + '%'); this.style.setProperty('--y', (event.clientY - this.getBoundingClientRect().top)/this.offsetHeight*100 + '%')">
+            <h3>Portfolio</h3>
+            <p class="muted">Mon portfolio professionnel multi-pages avec animations NBA/Lakers. Design moderne, responsif et interactions dynamiques.</p>
+            <div class="tech-stack">HTML • CSS • JavaScript • Figma</div>
+            <a class="cta" href="https://github.com" target="_blank">Voir le code</a>
+          </article>
+
+          <article class="project-card spotlight-target personal" onmousemove="this.style.setProperty('--x', (event.clientX - this.getBoundingClientRect().left)/this.offsetWidth*100 + '%'); this.style.setProperty('--y', (event.clientY - this.getBoundingClientRect().top)/this.offsetHeight*100 + '%')">
+            <h3>Stelle-Card</h3>
+            <p class="muted">Plateforme de location de véhicules moderne et intuitive. Gestion complète des réservations, authentification utilisateur, catalogues de véhicules, système de paiement et interface responsive.</p>
+            <div class="project-features">
+              <span>📱 Interface Responsive</span>
+              <span>🔐 Authentification</span>
+              <span>💳 Système de paiement</span>
+              <span>🚗 Catalogue véhicules</span>
+            </div>
+            <div class="tech-stack">React • Vite • Firebase • Firestore • Figma</div>
+            <div class="project-links">
+              <a class="cta" href="https://github.com/mesminalaho23/stelle-card" target="_blank">Voir le code</a>
+              <a class="cta" href="https://stelle-card.web.app" target="_blank">Visiter l'app</a>
+            </div>
+          </article>
+        </div>
+        </div>
+        </section>
+        </main>
+
+  <footer>
+    <div class="container footer-inner">© 2025 Mesmin ALAHO</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

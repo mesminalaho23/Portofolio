@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Mesmin ALAHO - Développeur Web passionné de basketball" />
+  <title>Accueil - Mesmin ALAHO</title>
+  
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+  <div id="dribbleBall" class="dribble-ball">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="11" stroke="#FDB927" stroke-width="1.5"/>
+      <path d="M1 12h22" stroke="#FDB927" stroke-width="1"/>
+      <path d="M7 5Q12 8, 17 5" stroke="#FDB927" stroke-width="1"/>
+      <path d="M7 19Q12 16, 17 19" stroke="#FDB927" stroke-width="1"/>
+    </svg>
+  </div>
+
+  <div id="sectionBall" class="section-ball">
+    <svg class="basketball" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="11" class="basketball-circle" stroke-width="1.5"/>
+      <path d="M1 12h22" class="basketball-lines"/>
+      <path d="M7 5Q12 8, 17 5" class="basketball-lines"/>
+      <path d="M7 19Q12 16, 17 19" class="basketball-lines"/>
+    </svg>
+  </div>
+
+  <div id="intro" class="intro-overlay">
+    <div class="intro-content">
+      <div class="logo-anim">
+        <div class="logo-mark-intro">MA</div>
+        <div class="logo-word">MESMIN</div>
+      </div>
+      <div class="swoosh"></div>
+    </div>
+  </div>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <div class="logo-mark small">MA</div>
+        <div class="brand-text">Mesmin ALAHO</div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Accueil</a>
+        <a href="projects.html" class="nav-link">Projets</a>
+        <a href="skills.html" class="nav-link">Compétences</a>
+        <a href="about.html" class="nav-link">À propos</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="menu-actions">
+        <div class="ball-in-menu bounce">
+          <svg class="basketball" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="11" class="basketball-circle" stroke-width="1.5"/>
+            <path d="M1 12h22" class="basketball-lines"/>
+            <path d="M7 5Q12 8, 17 5" class="basketball-lines"/>
+            <path d="M7 19Q12 16, 17 19" class="basketball-lines"/>
+          </svg>
+        </div>
+        <button id="burger" class="burger" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="projects.html" class="nav-link">Projets</a>
+      <a href="skills.html" class="nav-link">Compétences</a>
+      <a href="about.html" class="nav-link">À propos</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="hero">
+      <div class="container">
+        <div class="profile-card spotlight-target">
+          <div class="photo-placeholder">PHOTO</div>
+          <div class="name-container">
+            <h1>Mesmin ALAHO</h1>
+            <div class="crack-glass"></div>
+            <div class="ball-breaker">🏀</div>
+          </div>
+          <p class="muted">Développeur Web • Passionné de basketball</p>
+          <p>Je conçois des interfaces responsives, des jeux et des applications inspirées du sport. Ici quelques-unes de mes formations et intérêts.</p>
+        </div>
+
+        <div class="formations-card spotlight-target">
+          <h2>Formations</h2>
+          <article class="formation">
+            <div class="formation-image">
+              <div class="image-placeholder">📚</div>
+            </div>
+            <div class="formation-content">
+              <h3>Bachelor Concepteur & Développeur Web 2ère année</h3>
+              <p class="formation-school">L'École Multimédia</p>
+              <p class="muted">2025/2026 — EN COURS</p>
+              <p>Spécialisation en développement front-end et back-end, design UX/UI, et projets collaboratifs.</p>
+            </div>
+          </article>
+          <article class="formation">
+            <div class="formation-image">
+              <div class="image-placeholder">💻</div>
+            </div>
+            <div class="formation-content">
+              <h3>Bachelor Développeur Web 1ère année</h3>
+              <p class="formation-school">L'École Multimédia</p>
+              <p class="muted">2024/2025</p>
+              <p>Fondamentaux du développement web, apprentissage des frameworks et méthodologies agiles.</p>
+            </div>
+          </article>
+          <article class="formation">
+            <div class="formation-image">
+              <div class="image-placeholder">🎓</div>
+            </div>
+            <div class="formation-content">
+              <h3>Baccalauréat Technique</h3>
+              <p class="formation-school">Lycée Technique Poaty Bernard</p>
+              <p class="muted">2022/2023</p>
+              <p>Bases en informatique, électronique et technologie industrielle.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="interests-card spotlight-target">
+          <h2>Centres d'intérêt</h2>
+          <div class="interests-list">
+            <div class="interest-item">
+              <h4>🏀 Sport</h4>
+              <p>Basketball depuis 12 ans</p>
+            </div>
+            <div class="interest-item">
+              <h4>📚 Lecture</h4>
+              <p>Articles, romans, documents</p>
+            </div>
+            <div class="interest-item">
+              <h4>🎵 Musique</h4>
+              <p>RnB, Rap, Années 60 et 80</p>
+            </div>
+            <div class="interest-item">
+              <h4>💻 Apprentissage</h4>
+              <p>Langages de programmation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">© 2025 Mesmin ALAHO — Lakers style</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

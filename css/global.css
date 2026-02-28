@@ -1,0 +1,141 @@
+:root{
+--lakers-purple: #552583; /* common Lakers purple */
+--lakers-gold: #FDB927; /* Lakers gold */
+--lakers-deep: #38165b;
+--bg:#0a0a0a;
+--muted: #cfc7d9;
+--glass: rgba(255,255,255,0.04);
+}
+
+
+*{box-sizing:border-box}
+html{overflow-x:hidden}
+html,body{height:100%}
+body{
+margin:0;
+font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+background: radial-gradient(circle at var(--spotlight-x,10%) var(--spotlight-y,10%), rgba(85,37,131,0.08), transparent 10%), var(--bg);
+color:#fff;
+-webkit-font-smoothing:antialiased;
+overflow-x:hidden;
+}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;background:linear-gradient(90deg,var(--lakers-deep),var(--lakers-purple));}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--lakers-gold);position:relative}
+.brand::before{content:"";position:absolute;inset:-20px;border-radius:50%;animation:starsOrbit 25s linear infinite}
+.brand::after{content:"★★★★★★★★";position:absolute;inset:-18px;border-radius:50%;display:flex;align-items:center;justify-content:space-around;font-size:12px;color:rgba(253,185,39,0.7);animation:starsRotate 25s linear infinite;pointer-events:none}
+.logo-mark{width:56px;height:56px;border-radius:12px;background:linear-gradient(180deg,var(--lakers-gold),#e3a71f);display:flex;align-items:center;justify-content:center;color:#140e26;font-weight:900;font-size:20px;box-shadow:0 6px 20px rgba(85,37,131,0.35);position:relative;z-index:1}
+.logo-mark.small{width:42px;height:42px;font-size:14px;border-radius:10px}
+.brand-text{font-weight:800}
+.main-nav{display:flex;gap:14px}
+.nav-link{color:rgba(255,255,255,0.92);text-decoration:none;padding:8px;border-radius:8px;font-weight:700}
+.nav-link.active{background:rgba(0,0,0,0.18)}
+.menu-actions{display:flex;align-items:center;gap:12px}
+/* Stadium spotlight effect - follows mouse */
+html{--spotlight-x:10%;--spotlight-y:10%}
+
+/* Burger Menu Transform */
+.burger{display:inline-flex;flex-direction:column;gap:4px;border:0;background:transparent;padding:8px;cursor:pointer;position:relative;width:40px;height:40px;align-items:center;justify-content:center}
+.burger span{width:22px;height:2px;background:#fff;display:block;border-radius:2px;transition:all .4s cubic-bezier(.34,.1,.68,.55)}
+.burger.active span:nth-child(1){transform:rotate(45deg) translate(8px, 8px)}
+.burger.active span:nth-child(2){opacity:0}
+.burger.active span:nth-child(3){transform:rotate(-45deg) translate(7px, -7px)}
+.burger.active::before{content:"";position:absolute;width:28px;height:28px;border:2px solid #fff;border-radius:50%;animation:burgerBallPulse .4s cubic-bezier(.34,.1,.68,.55) forwards}
+.mobile-menu{display:none;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:linear-gradient(180deg,rgba(0,0,0,0.95),rgba(0,0,0,0.98));padding:16px;z-index:9998}
+.mobile-menu a{color:#fff;padding:10px 6px;text-decoration:none}
+.mobile-menu.open{display:flex}
+
+
+.footer-inner{padding:20px;text-align:center;color:var(--muted)}
+
+
+/* Optimized background */
+.content{
+     background:linear-gradient(180deg, rgba(85,37,131,0.04), rgba(255,255,255,0.01), rgba(85,37,131,0.03));
+     min-height:calc(100vh - 140px);
+     position:relative;
+     overflow:hidden}
+
+/* Subtle glow effect */
+.content::before{
+     content:"";
+     position:absolute;
+     bottom:0;
+     left:0;
+     right:0;
+     height:180px;
+     background:radial-gradient(ellipse at 50% 100%, rgba(85,37,131,0.08), transparent 60%);
+     pointer-events:none}
+
+
+/* Ball in menu */
+.ball-in-menu{width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:default}
+.bounce{animation-name:ballBounce;animation-duration:1.2s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.34,.66,.66,1)}
+@keyframes ballBounce{0%{transform:translateY(0) scale(1)}50%{transform:translateY(-14px) scale(1.05)}100%{transform:translateY(0) scale(1)}}
+
+/* Basketball SVG styles */
+.basketball{width:32px;height:32px;filter:drop-shadow(0 2px 8px rgba(253,185,39,0.3))}
+.basketball-circle{fill:none;stroke:#FDB927;stroke-width:1.5}
+.basketball-lines{stroke:#FDB927;stroke-width:1;stroke-linecap:round}
+
+/* Spin-dribble ball */
+.dribble-ball{position:fixed;bottom:40px;right:40px;width:48px;height:48px;z-index:4;pointer-events:none;opacity:0.6;filter:drop-shadow(0 4px 12px rgba(253,185,39,0.3))}
+.dribble-ball svg{width:100%;height:100%;will-change:transform}
+
+
+/* spotlight effect base */
+.spotlight-target{position:relative;overflow:hidden}
+.spotlight-target::after{content:"";position:absolute;inset:0;pointer-events:none;transition:opacity .4s,transform .4s;opacity:0}
+.spotlight-on::after{opacity:1;background:radial-gradient(circle at var(--x,50%) var(--y,50%), rgba(253,185,39,0.12), transparent 25%)}
+
+
+/* transitions between pages - NBA curtain effect */
+.page-transition{opacity:1;transition:opacity .45s ease}
+.page-exit{animation:curtainClose .5s ease-out forwards}
+@keyframes curtainClose{0%{opacity:1;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}50%{clip-path:polygon(50% 0,100% 0,100% 100%,50% 100%)}100%{opacity:0;clip-path:polygon(50% 0,50% 0,50% 100%,50% 100%)}}
+
+/* Page entrance - curtain opening */
+body{animation:curtainOpen .6s cubic-bezier(.34,.1,.68,.55) forwards}
+@keyframes curtainOpen{0%{clip-path:polygon(50% 0,50% 0,50% 100%,50% 100%);opacity:0}50%{opacity:1}100%{clip-path:polygon(0 0,100% 0,100% 100%,0 100%);opacity:1}}
+
+
+/* small utilities */
+.muted{color:var(--muted)}
+.cta{display:inline-block;margin-top:10px;padding:8px 12px;background:var(--lakers-gold);color:#140e26;border-radius:8px;text-decoration:none;font-weight:800;position:relative;transition:all .3s}
+.cta:hover{transform:scale(1.05);box-shadow:0 6px 20px rgba(253,185,39,0.4),0 0 20px rgba(85,37,131,0.5)}
+
+/* Lightning effect for important text */
+h1,h2{position:relative;cursor:pointer}
+h1::before,h2::before{content:"";position:absolute;left:-8px;top:0;width:4px;height:100%;background:linear-gradient(180deg, rgba(85,37,131,0.3), rgba(253,185,39,0.5), rgba(85,37,131,0.3));clip-path:polygon(0 0,100% 10%,0 20%,100% 30%,0 40%,100% 50%,0 60%,100% 70%,0 80%,100% 90%,0 100%);opacity:0;animation:lightningFlash 3s ease-in-out infinite}
+h1::before{animation-delay:0s}
+h2::before{animation-delay:.5s}
+
+/* Laser Lakers underline effect */
+h1::after,h2::after{content:"";position:absolute;bottom:-4px;left:0;width:0;height:2px;background:linear-gradient(90deg, transparent, var(--lakers-gold), var(--lakers-gold), transparent);box-shadow:0 0 12px rgba(253,185,39,0.8);opacity:0}
+h1:hover::after,h2:hover::after{animation:laserUnderline .4s cubic-bezier(.34,.1,.68,.55) forwards}
+
+@keyframes lightningFlash{0%{opacity:0}20%{opacity:1}30%{opacity:0}50%{opacity:1}60%{opacity:0}100%{opacity:0}}
+@keyframes laserUnderline{0%{width:0;opacity:1;left:0}50%{opacity:1}100%{width:100%;opacity:0}}
+@keyframes burgerBallPulse{0%{opacity:0;transform:scale(0);border-width:3px}50%{opacity:1}100%{opacity:0;transform:scale(1.2);border-width:1px}}
+
+/* Bouncing ball between sections */
+.section-ball{position:fixed;pointer-events:none;z-index:5;opacity:0}
+.section-ball svg{filter:drop-shadow(0 4px 12px rgba(253,185,39,0.4))}
+.section-ball.bounce-in{animation:sectionBallBounce 1.2s cubic-bezier(.34,.1,.68,.55) forwards}
+
+@keyframes sectionBallBounce{0%{opacity:0;transform:translateY(-40px) scale(0)}20%{opacity:1}50%{transform:translateY(60px) scale(1.1)}75%{transform:translateY(-20px) scale(0.95)}100%{opacity:0;transform:translateY(-40px) scale(0)}}
+
+/* NBA Stars orbit */
+@keyframes starsRotate{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+@keyframes starsOrbit{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}
+
+
+/* responsive */
+@media (max-width:800px){
+.burger{display:inline-flex}
+.main-nav{display:none}
+}
+@media (min-width:801px){
+.burger{display:none}
+.mobile-menu{display:none !important}
+}

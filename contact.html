@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Mesmin ALAHO - Développeur Web" />
+  <title>Contact - Mesmin ALAHO</title>
+  
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+  <div id="sectionBall" class="section-ball">
+    <svg class="basketball" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="11" class="basketball-circle" stroke-width="1.5"/>
+      <path d="M1 12h22" class="basketball-lines"/>
+      <path d="M7 5Q12 8, 17 5" class="basketball-lines"/>
+      <path d="M7 19Q12 16, 17 19" class="basketball-lines"/>
+    </svg>
+  </div>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <div class="logo-mark small">MA</div>
+        <div class="brand-text">Mesmin ALAHO</div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="projects.html" class="nav-link">Projets</a>
+        <a href="skills.html" class="nav-link">Compétences</a>
+        <a href="about.html" class="nav-link">À propos</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <div class="menu-actions">
+        <div class="ball-in-menu bounce">
+          <svg class="basketball" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="11" class="basketball-circle" stroke-width="1.5"/>
+            <path d="M1 12h22" class="basketball-lines"/>
+            <path d="M7 5Q12 8, 17 5" class="basketball-lines"/>
+            <path d="M7 19Q12 16, 17 19" class="basketball-lines"/>
+          </svg>
+        </div>
+        <button id="burger" class="burger" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="projects.html" class="nav-link">Projets</a>
+      <a href="skills.html" class="nav-link">Compétences</a>
+      <a href="about.html" class="nav-link">À propos</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="contact-section container">
+      <h1>Me contacter</h1>
+      
+      <div class="contact-grid">
+        <!-- Formulaire -->
+        <div class="contact-form-box spotlight-target">
+          <h2>Envoyez-moi un message</h2>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="cta">Envoyer</button>
+            <div id="formMessage" class="form-message"></div>
+          </form>
+        </div>
+
+        <!-- Infos de contact -->
+        <div class="contact-info-box spotlight-target">
+          <h2>Informations</h2>
+          <div class="contact-links">
+            <a href="mailto:mesminalaho23@gmail.com" class="contact-link">
+              <svg class="icon-contact" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8L10.89 13.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div>
+                <span class="label">Email</span>
+                <span class="value">mesminalaho23@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+33759312148" class="contact-link">
+              <svg class="icon-contact" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div>
+                <span class="label">Téléphone</span>
+                <span class="value">+33 7 59 31 21 48</span>
+              </div>
+            </a>
+            <a href="https://wa.me/33759312148" target="_blank" rel="noreferrer" class="contact-link">
+              <svg class="icon-contact" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.672 13.108c-.33-.165-1.965-.97-2.266-1.082-.3-.11-.52-.165-.738.166-.22.33-.852 1.081-1.043 1.301-.19.22-.383.248-.713.082-.33-.165-1.392-.513-2.652-1.637-981.476-1.293-1.551-2.977-.716-3.307.33-.33.743-.165 1.073.165.165.22.826 1.072 1.056 1.463.22.39.11.715-.055.946-.165.22-.738 1.636-1.015 2.236-.276.6-.55.604-.738.604h-.63a1.15 1.15 0 0 1-1.043-.507c-.27-.6-1.027-2.529-1.027-4.839 0-2.31.842-4.456 2.422-6.08 1.58-1.62 3.83-2.67 6.196-2.67 3.236 0 5.973 2.64 6.328 6.17.11 1.035.055 2.093-.275 3.102-.33.99-.99 1.882-1.853 2.529-.33.248-.77.412-1.242.412m-3.327-13.217c-5.084 0-9.22 4.135-9.22 9.219 0 1.627.425 3.222 1.23 4.634L2 23l4.943-1.301a9.2 9.2 0 0 0 4.402 1.116h.002c5.084 0 9.219-4.135 9.219-9.219 0-2.465-.959-4.78-2.698-6.517-1.738-1.737-4.052-2.696-6.517-2.696"/>
+              </svg>
+              <div>
+                <span class="label">WhatsApp</span>
+                <span class="value">Disponible</span>
+              </div>
+            </a>
+          </div>
+
+          <h3 style="margin-top: 28px; color: rgba(253,185,39,0.9);">Réseaux sociaux</h3>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" title="Instagram">
+              <svg class="icon-contact" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" title="LinkedIn">
+              <svg class="icon-contact" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.469v6.766z"/>
+              </svg>
+            </a>
+            <a href="https://github.com/mesminalaho23" target="_blank" rel="noreferrer" title="GitHub">
+              <svg class="icon-contact" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">© 2025 Mesmin ALAHO</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

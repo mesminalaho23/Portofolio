@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="À propos de Mesmin ALAHO - Développeur Web" />
+  <title>À propos - Mesmin ALAHO</title>
+  
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/about.css" />
+</head>
+<body>
+  <div id="sectionBall" class="section-ball">
+    <svg class="basketball" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="11" class="basketball-circle" stroke-width="1.5"/>
+      <path d="M1 12h22" class="basketball-lines"/>
+      <path d="M7 5Q12 8, 17 5" class="basketball-lines"/>
+      <path d="M7 19Q12 16, 17 19" class="basketball-lines"/>
+    </svg>
+  </div>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <div class="logo-mark small">MA</div>
+        <div class="brand-text">Mesmin ALAHO</div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="projects.html" class="nav-link">Projets</a>
+        <a href="skills.html" class="nav-link">Compétences</a>
+        <a href="about.html" class="nav-link active">À propos</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="menu-actions">
+        <div class="ball-in-menu bounce">
+          <svg class="basketball" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="11" class="basketball-circle" stroke-width="1.5"/>
+            <path d="M1 12h22" class="basketball-lines"/>
+            <path d="M7 5Q12 8, 17 5" class="basketball-lines"/>
+            <path d="M7 19Q12 16, 17 19" class="basketball-lines"/>
+          </svg>
+        </div>
+        <button id="burger" class="burger" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="projects.html" class="nav-link">Projets</a>
+      <a href="skills.html" class="nav-link">Compétences</a>
+      <a href="about.html" class="nav-link">À propos</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="about-section container">
+      <h1>À propos de moi</h1>
+      <div class="about-box spotlight-target">
+        <h2>Qui suis-je ?</h2>
+        <p>Je suis Mesmin ALAHO, étudiant en deuxième année de Bachelor Concepteur & Développeur Web à L'École Multimédia. Passionné par le développement web, je conçois des applications interactives, responsives et centrées sur l'expérience utilisateur.</p>
+        
+        <h3>Mes compétences</h3>
+        <p>Rigoureux et motivé, je maîtrise les technologies web essentielles (HTML, CSS, JavaScript, PHP) et les frameworks modernes comme React, React-Vite et Framework7. Mes projets récents incluent :</p>
+        <ul class="project-highlights">
+          <li><strong>BugTracker</strong> — Système de gestion de tickets avec dashboard admin (PHP/MySQL)</li>
+          <li><strong>Checklist</strong> — Application moderne de gestion de tâches (React/Vite)</li>
+          <li><strong>Prompt Wallet</strong> — Application desktop pour gérer des prompts IA (Electron-Vite/React)</li>
+        </ul>
+
+        <h3>Mon approche</h3>
+        <p>Curieux des nouvelles technologies et autonome, j'apprends rapidement et m'adapte à différents environnements de travail. Je travaille efficacement en équipe, respecte les délais et apporte une approche méthodique et professionnelle à chaque projet.</p>
+
+        <h3>Recherche d'alternance</h3>
+        <p>Actuellement à la recherche d'une <strong>alternance du 16 février au 24 avril 2026</strong>, je suis enthousiaste à l'idée de contribuer à des projets concrets, d'apprendre auprès de professionnels du secteur et de mener une expérience enrichissante dans un environnement professionnel.</p>
+
+        <h3>Passion personnelle</h3>
+        <p>Fan de basketball depuis 12 ans, passionné par la lecture, la musique (RnB, Rap, années 60-80) et l'apprentissage constant des nouveaux langages de programmation. J'aime créer des interfaces élégantes qui combinent ergonomie et performance.</p>
+      </div>
+
+      <div class="map-section">
+         <h2>Ma localisation</h2>
+         <div class="location-box spotlight-target">
+           <p><strong>📍 Localisation</strong></p>
+           <p>Île-de-France, France</p>
+           <a href="https://www.google.com/maps" target="_blank" class="cta">Voir sur Google Maps</a>
+         </div>
+       </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">© 2025 Mesmin ALAHO</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

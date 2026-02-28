@@ -1,0 +1,51 @@
+.about-box{padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02),transparent);border:1px solid rgba(85,37,131,0.08);margin-bottom:28px}
+.about-box h2{
+     color:#fff;
+     margin:0 0 12px 0;
+     font-size:22px;
+     font-weight:800}
+.about-box h3{
+     color:rgba(253,185,39,0.9);
+     margin:18px 0 8px 0;
+     font-size:16px;
+     font-weight:700}
+.about-box p{
+     margin:0 0 12px 0;
+     line-height:1.6;
+     color:rgba(255,255,255,0.85)}
+.about-box p:last-of-type{margin-bottom:0}
+.project-highlights{
+     list-style:none;
+     padding:0;
+     margin:12px 0}
+.project-highlights li{
+     padding:10px 12px;
+     margin:8px 0;
+     background:rgba(253,185,39,0.05);
+     border-left:3px solid rgba(253,185,39,0.6);
+     border-radius:4px;
+     color:rgba(255,255,255,0.85);
+     font-size:14px}
+.project-highlights strong{
+     color:rgba(253,185,39,0.9)}
+
+.map-section{width:100%;margin-top:28px}
+.map-section h2{text-align:center;margin-bottom:20px;color:#fff}
+.location-box{
+     max-width:400px;
+     margin:0 auto;
+     padding:20px;
+     border-radius:12px;
+     background:linear-gradient(180deg, rgba(85,37,131,0.1), rgba(0,0,0,0.05));
+     border:1px solid rgba(253,185,39,0.2);
+     text-align:center}
+.location-box p{
+     margin:8px 0;
+     color:rgba(255,255,255,0.85);
+     font-size:14px}
+.location-box p strong{
+     color:rgba(253,185,39,0.9);
+     font-size:16px}
+.location-box .cta{
+     display:inline-block;
+     margin-top:12px}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Compétences de Mesmin ALAHO - Développeur Web" />
+  <title>Compétences - Mesmin ALAHO</title>
+  
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/skills.css" />
+</head>
+<body>
+  <div id="sectionBall" class="section-ball">
+    <svg class="basketball" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="11" class="basketball-circle" stroke-width="1.5"/>
+      <path d="M1 12h22" class="basketball-lines"/>
+      <path d="M7 5Q12 8, 17 5" class="basketball-lines"/>
+      <path d="M7 19Q12 16, 17 19" class="basketball-lines"/>
+    </svg>
+  </div>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <div class="logo-mark small">MA</div>
+        <div class="brand-text">Mesmin ALAHO</div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="projects.html" class="nav-link">Projets</a>
+        <a href="skills.html" class="nav-link active">Compétences</a>
+        <a href="about.html" class="nav-link">À propos</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="menu-actions">
+        <div class="ball-in-menu bounce">
+          <svg class="basketball" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="11" class="basketball-circle" stroke-width="1.5"/>
+            <path d="M1 12h22" class="basketball-lines"/>
+            <path d="M7 5Q12 8, 17 5" class="basketball-lines"/>
+            <path d="M7 19Q12 16, 17 19" class="basketball-lines"/>
+          </svg>
+        </div>
+        <button id="burger" class="burger" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="projects.html" class="nav-link">Projets</a>
+      <a href="skills.html" class="nav-link">Compétences</a>
+      <a href="about.html" class="nav-link">À propos</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="skills-section container">
+      <h1>Compétences</h1>
+      <div class="skills-grid">
+         <div class="category spotlight-target" onmousemove="this.style.setProperty('--x', (event.clientX - this.getBoundingClientRect().left)/this.offsetWidth*100 + '%'); this.style.setProperty('--y', (event.clientY - this.getBoundingClientRect().top)/this.offsetHeight*100 + '%')">
+           <h3>Informatique Web & Programmation</h3>
+           <ul class="skills-list">
+             <li>HTML / CSS / JavaScript</li>
+             <li>React • React-Vite</li>
+             <li>PHP • Electron • Electron-Vite</li>
+             <li>Framework7 • WordPress</li>
+           </ul>
+         </div>
+
+         <div class="category spotlight-target" onmousemove="this.style.setProperty('--x', (event.clientX - this.getBoundingClientRect().left)/this.offsetWidth*100 + '%'); this.style.setProperty('--y', (event.clientY - this.getBoundingClientRect().top)/this.offsetHeight*100 + '%')">
+           <h3>Applications & Outils</h3>
+           <ul class="skills-list">
+             <li>VSCode</li>
+             <li>Figma • Canva</li>
+             <li>Pack Office</li>
+             <li>Github • Notion • Trello</li>
+           </ul>
+         </div>
+
+         <div class="category spotlight-target" onmousemove="this.style.setProperty('--x', (event.clientX - this.getBoundingClientRect().left)/this.offsetWidth*100 + '%'); this.style.setProperty('--y', (event.clientY - this.getBoundingClientRect().top)/this.offsetHeight*100 + '%')">
+           <h3>Gestion de Projet</h3>
+           <ul class="skills-list">
+             <li>Notion</li>
+             <li>Github</li>
+             <li>Trello</li>
+             <li>Méthodologies agiles</li>
+           </ul>
+         </div>
+
+         <div class="category spotlight-target" onmousemove="this.style.setProperty('--x', (event.clientX - this.getBoundingClientRect().left)/this.offsetWidth*100 + '%'); this.style.setProperty('--y', (event.clientY - this.getBoundingClientRect().top)/this.offsetHeight*100 + '%')">
+           <h3>Systèmes</h3>
+           <ul class="skills-list">
+             <li>Windows</li>
+             <li>2007 • 2010 • 2011</li>
+           </ul>
+         </div>
+
+         <div class="category spotlight-target" onmousemove="this.style.setProperty('--x', (event.clientX - this.getBoundingClientRect().left)/this.offsetWidth*100 + '%'); this.style.setProperty('--y', (event.clientY - this.getBoundingClientRect().top)/this.offsetHeight*100 + '%')">
+           <h3>Compétences Humaines</h3>
+           <ul class="skills-list">
+             <li>Curiosité technologique</li>
+             <li>Rigoureux & Motivé</li>
+             <li>Travail d'équipe</li>
+             <li>Dynamique • Autonome</li>
+             <li>Adaptabilité</li>
+           </ul>
+         </div>
+
+         <div class="category spotlight-target" onmousemove="this.style.setProperty('--x', (event.clientX - this.getBoundingClientRect().left)/this.offsetWidth*100 + '%'); this.style.setProperty('--y', (event.clientY - this.getBoundingClientRect().top)/this.offsetHeight*100 + '%')">
+           <h3>Frameworks</h3>
+           <ul class="skills-list">
+             <li>React</li>
+             <li>Framework7</li>
+           </ul>
+         </div>
+       </div>
+
+      
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">© 2025 Mesmin ALAHO</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

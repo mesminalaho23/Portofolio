@@ -1,0 +1,90 @@
+.projects-section{position:relative}
+.projects-section::before{content:"";position:absolute;inset:0;background-image:url('../assets/basket-ball-vue-face-terrain_23-2148393897.avif');background-size:cover;background-position:center;background-attachment:fixed;opacity:0.06;pointer-events:none;z-index:-1}
+.projects-container{
+     display:grid;
+     grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;position:relative;z-index:1}
+.project-card{
+    padding:18px;
+    border-radius:12px;
+    background:linear-gradient(180deg, rgba(0,0,0,0.12), rgba(255,255,255,0.02));
+    border:1px solid rgba(85,37,131,0.12);
+    position:relative;
+    overflow:hidden;
+    animation:dunkEntry .8s cubic-bezier(.34,.1,.68,.55) forwards;
+    transition:transform .1s ease-out,
+    box-shadow .2s,
+    border-color .2s}
+.project-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at var(--x,50%) var(--y,50%), rgba(253,185,39,0.15), transparent 60%);
+    opacity:0;
+    pointer-events:none}
+.project-card::after{
+    content:"";position
+    :absolute;
+    bottom:-2px;
+    left:0;
+    right:0;
+    height:2px;
+    background:linear-gradient(90deg, transparent, rgba(253,185,39,0.8), transparent);
+    opacity:0}
+.project-card:hover::before{
+    animation:dunkFlash .6s cubic-bezier(.34,.1,.68,.55)}
+.project-card:hover::after{
+    animation:dunkShadow .6s cubic-bezier(.34,.1,.68,.55)}
+.project-card:hover{
+    animation:dunkBounce .6s cubic-bezier(.34,.1,.68,.55);
+    box-shadow:0 20px 40px rgba(253,185,39,0.25);
+    border-color:rgba(253,185,39,0.3)}
+.project-card h3{
+     margin:0 0 6px 0;color:#fff;position:relative;
+     z-index:1}
+.project-card .muted{
+     color:var(--muted);
+     position:relative;
+     z-index:1}
+.project-card .cta{
+     position:relative;z-index:1}
+.project-card.personal{
+     background:linear-gradient(180deg, rgba(0,0,0,0.08), rgba(255,255,255,0.01));
+     border-color:rgba(255,255,255,0.08)}
+.project-card.personal::before{
+     background:radial-gradient(circle at var(--x,50%) var(--y,50%), rgba(255,255,255,0.08), transparent 60%);
+}
+.project-links{
+     display:flex;
+     gap:10px;
+     flex-wrap:wrap;
+     margin-top:10px}
+.project-links .cta{
+     flex:1;
+     min-width:120px;
+     text-align:center}
+.project-features{
+     display:flex;
+     gap:8px;
+     flex-wrap:wrap;
+     margin:10px 0;
+     font-size:12px}
+.project-features span{
+     background:rgba(253,185,39,0.08);
+     padding:6px 10px;
+     border-radius:6px;
+     color:rgba(253,185,39,0.9);
+     border:1px solid rgba(253,185,39,0.2)}
+.tech-stack{
+     display:flex;
+     gap:8px;
+     flex-wrap:wrap;
+     margin:10px 0;
+     font-size:12px;
+     color:rgba(253,185,39,0.8);
+     position:relative;
+     z-index:1}
+
+@keyframes dunkEntry{0%{opacity:0;transform:translateY(30px) scale(0.9);clip-path:polygon(0 100%,100% 100%,100% 100%,0 100%)}50%{opacity:1}100%{opacity:1;transform:translateY(0) scale(1);clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}}
+@keyframes dunkBounce{0%{transform:translateY(0) scale(1)}25%{transform:translateY(12px) scale(1.02)}50%{transform:translateY(0) scale(1.04)}75%{transform:translateY(-4px) scale(1.03)}100%{transform:translateY(-8px) scale(1.03)}}
+@keyframes dunkFlash{0%{opacity:0;transform:scale(0.8)}40%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(2)}}
+@keyframes dunkShadow{0%{opacity:0;height:2px}50%{opacity:1;height:4px}100%{opacity:0;height:2px}}
