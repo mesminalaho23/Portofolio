@@ -8,15 +8,52 @@
     
     gap:18px}
 .profile-card{
-    background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.04));
-    padding:20px;
-    border-radius:12px;display:grid;
-    grid-template-columns:160px 1fr;
-    gap:18px;
-    align-items:center}
+     background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.04));
+     padding:28px;
+     border-radius:12px;display:flex;
+     flex-direction:column;
+     gap:20px}
+@media (max-width:768px){
+     .profile-card{
+          padding:20px}
+}
+.hero-content{
+     display:flex;
+     flex-direction:column;
+     gap:12px}
+.job-title{
+     margin:0;
+     font-size:20px;
+     font-weight:800;
+     color:rgba(253,185,39,0.95);
+     background:linear-gradient(90deg, rgba(253,185,39,0.9), rgba(85,37,131,0.8));
+     -webkit-background-clip:text;
+     -webkit-text-fill-color:transparent;
+     background-clip:text}
+.hero-description{
+     margin:0;
+     font-size:14px;
+     line-height:1.6;
+     color:rgba(255,255,255,0.85)}
+.hero-skills{
+     margin:0;
+     font-size:12px;
+     color:rgba(253,185,39,0.8);
+     font-weight:600}
+.hero-skills strong{
+     color:rgba(253,185,39,0.95)}
+.hero-call{
+     margin:0;
+     font-size:13px;
+     color:rgba(253,185,39,0.85);
+     font-weight:700;
+     padding:8px 12px;
+     background:rgba(253,185,39,0.08);
+     border-left:3px solid rgba(253,185,39,0.6);
+     border-radius:4px}
 .photo-placeholder{
-     width:150px;
-     height:150px;
+     width:120px;
+     height:120px;
      border-radius:10px;
      background-image: url('../assets/ordibasketball.webp');
      background-size:cover;
@@ -30,7 +67,8 @@
      position:relative;
      overflow:hidden;
      box-shadow:0 8px 24px rgba(85,37,131,0.3);
-     animation:photoGlow .8s cubic-bezier(.34,.1,.68,.55) forwards}
+     animation:photoGlow .8s cubic-bezier(.34,.1,.68,.55) forwards;
+     align-self:flex-start}
 .photo-placeholder::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg, transparent 30%, rgba(255,255,255,0.4) 50%, transparent 70%);transform:translateX(-150px);animation:sweatShine 3.5s ease-in-out infinite;border-radius:10px}
 .formations-card,.interests-card{
     background:linear-gradient(180deg, rgba(85,37,131,0.06), rgba(0,0,0,0.02));
